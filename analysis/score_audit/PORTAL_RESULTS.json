@@ -1,0 +1,23 @@
+{
+  "updated_date": "2026-09-27",
+  "source": "User-reported actual portal result in this conversation",
+  "current_best_reported": {
+    "submission": "SUB-FINAL-V3_m2_ce_old_hi",
+    "public_macro_f05": 0.982564,
+    "previous_submission": "SUB-N3_ce2_bge_murilIN",
+    "previous_public_macro_f05": 0.979604,
+    "absolute_gain": 0.00296,
+    "gap_to_0_99": 0.007436,
+    "architecture": "M2 stage-1 (NORM-v4t, BLK-v4b@40n20, FEAT-v5) fused with old M-v5 stage-1/stage-2, mDeBERTa-2, BGE, India-only MuRIL, confident-pair review, LightGBM stacker and exclusive gated expected-F decision",
+    "local_validation_macro_f05": 0.9896525532711251,
+    "gate": 0.55,
+    "gate_selection": "EVAL, per this V3 artifact; not the later ES-selected V3b/V3c protocol",
+    "stacker_trees": 444
+  },
+  "later_variants_portal_status": {
+    "SUB-FINAL-V3b_es_protocol": "No portal score reported to this session",
+    "V3c": "No portal score reported to this session"
+  },
+  "uploads_remaining": 2,
+  "uploads_remaining_source": "User confirmed after V3 portal result"
+}

@@ -1,0 +1,72 @@
+{
+  "note": "Label-free profile, not an accuracy estimate.",
+  "counts": {
+    "US": {
+      "added": 10095,
+      "removed": 1888
+    },
+    "France": {
+      "added": 12550,
+      "removed": 18821
+    },
+    "India": {
+      "added": 22085,
+      "removed": 2471
+    }
+  },
+  "affected_s1": {
+    "US": 11513,
+    "France": 29097,
+    "India": 22910
+  },
+  "summary": [
+    {
+      "country": "France",
+      "kind": "added",
+      "links": 12550,
+      "no_address": 509,
+      "name_tset": 69.48037141292035,
+      "address_tset": 81.25037044206454
+    },
+    {
+      "country": "France",
+      "kind": "removed",
+      "links": 18821,
+      "no_address": 227,
+      "name_tset": 79.36484994050375,
+      "address_tset": 84.92041833950253
+    },
+    {
+      "country": "India",
+      "kind": "added",
+      "links": 22085,
+      "no_address": 1920,
+      "name_tset": 73.81276327940944,
+      "address_tset": 74.09088317985875
+    },
+    {
+      "country": "India",
+      "kind": "removed",
+      "links": 2471,
+      "no_address": 362,
+      "name_tset": 79.21648428925344,
+      "address_tset": 73.43830702949535
+    },
+    {
+      "country": "US",
+      "kind": "added",
+      "links": 10095,
+      "no_address": 1847,
+      "name_tset": 76.89679945107856,
+      "address_tset": 68.4003666949061
+    },
+    {
+      "country": "US",
+      "kind": "removed",
+      "links": 1888,
+      "no_address": 358,
+      "name_tset": 79.39767722129875,
+      "address_tset": 69.60952001866022
+    }
+  ]
+}

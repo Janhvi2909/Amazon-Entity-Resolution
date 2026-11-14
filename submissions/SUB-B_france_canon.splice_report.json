@@ -1,0 +1,17 @@
+{
+  "countries": [
+    "France"
+  ],
+  "matching": {
+    "rows_replaced": 259452,
+    "ids_before": 834135,
+    "ids_base_in_replaced_rows": 823596,
+    "ids_override_in_replaced_rows": 834135
+  },
+  "candidates": {
+    "rows_replaced": 259452,
+    "ids_before": 3891780,
+    "ids_base_in_replaced_rows": 12892579,
+    "ids_override_in_replaced_rows": 3891780
+  }
+}

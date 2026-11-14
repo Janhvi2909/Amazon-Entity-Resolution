@@ -1,0 +1,20 @@
+[5s] Matches 5,734,515
+[5s] Candidates S1 0; cumulative 4,808,008
+[6s] Candidates S1 100,000; cumulative 9,617,184
+[6s] Candidates S1 200,000; cumulative 14,426,269
+[7s] Candidates S1 300,000; cumulative 19,234,010
+[7s] Candidates S1 400,000; cumulative 24,042,703
+[8s] Candidates S1 500,000; cumulative 28,851,076
+[8s] Candidates S1 600,000; cumulative 33,660,364
+[9s] Candidates S1 700,000; cumulative 38,469,291
+[9s] Candidates S1 800,000; cumulative 43,278,375
+[10s] Candidates S1 900,000; cumulative 48,087,785
+[10s] Candidates S1 1,000,000; cumulative 52,896,614
+[11s] Candidates S1 1,100,000; cumulative 57,704,683
+[11s] Candidates S1 1,200,000; cumulative 62,514,070
+[12s] Candidates S1 1,300,000; cumulative 67,322,309
+[12s] Candidates S1 1,400,000; cumulative 72,131,029
+[13s] Candidates S1 1,500,000; cumulative 76,938,750
+[13s] Candidates S1 1,600,000; cumulative 81,746,064
+[14s] Candidates S1 1,700,000; cumulative 83,311,838
+[14s] {'links': 5734515, 'gate': 0.45, 'country_links': {'India': 2685871, 'France': 813701, 'US': 2234943}, 'candidate_pairs': 83311838}

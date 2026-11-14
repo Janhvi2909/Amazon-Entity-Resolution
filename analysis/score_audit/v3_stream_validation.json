@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": "S1 order/coverage, headers, list syntax, per-list uniqueness, subset",
+  "not_checked": [
+    "S2/S3 existence",
+    "target exclusive ownership",
+    "scored-candidate provenance"
+  ],
+  "rows": 1732544,
+  "matches": 5751431,
+  "candidates": 25988160,
+  "empty_matches": 102084
+}

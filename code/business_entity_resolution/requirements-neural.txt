@@ -1,0 +1,8 @@
+# Cross-encoder branch (src/neural/ce.py), GPU node. Versions as installed where the final runs were made
+# (Python 3.11.13, CUDA 12.8). Licences: PyTorch BSD-3, transformers / tokenizers Apache-2.0,
+# sentencepiece Apache-2.0, protobuf BSD-3. Also install requirements.txt (polars, numpy, lightgbm) on this node.
+torch==2.7.1
+transformers==4.56.2
+tokenizers==0.22.2
+sentencepiece==0.2.1
+protobuf==7.36.2

@@ -1,0 +1,19 @@
+{
+  "architecture": "SUB-R: M-v5 plus CE2/BGE/MuRIL-IN, 77-feature LightGBM stacker",
+  "validation_macro_f05": 0.9882140352957669,
+  "validation_countries": [
+    "US",
+    "India"
+  ],
+  "leaderboard_score": null,
+  "uploaded": false,
+  "gate": 0.45,
+  "gate_selected_on": "ES",
+  "model_trees": 704,
+  "hashes": {
+    "matching_results.tsv": "1215dda24020dcdd8e7226f4dda4e03d",
+    "candidate_pairs.tsv": "9ed7d62d9732dc51644a8258f2cf03f7"
+  },
+  "full_validator_with_id_checks": "PASS; remote output hashes equal local files",
+  "continuation_plan": "../../EXECUTION_PLAN_TO_DEADLINE.md"
+}

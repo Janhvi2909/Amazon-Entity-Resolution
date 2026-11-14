@@ -1,0 +1,133 @@
+{
+  "keep_legal": [
+    "France"
+  ],
+  "legal_report": {
+    "France": {
+      "dups_kept": 2,
+      "dups_stripped": 59,
+      "keep_legal": true
+    },
+    "India": {
+      "dups_kept": 0,
+      "dups_stripped": 6,
+      "keep_legal": false
+    },
+    "US": {
+      "dups_kept": 0,
+      "dups_stripped": 10,
+      "keep_legal": false
+    }
+  },
+  "unseen": [
+    "France"
+  ],
+  "geo": {
+    "France": {
+      "paysdelaloire": [
+        "region",
+        "paysdelaloire"
+      ],
+      "hautsdefrance": [
+        "region",
+        "hautsdefrance"
+      ],
+      "nouvelleaquitaine": [
+        "region",
+        "nouvelleaquitaine"
+      ],
+      "bordeaux": [
+        "city",
+        "nouvelleaquitaine"
+      ],
+      "dunkerque": [
+        "city",
+        "hautsdefrance"
+      ],
+      "stnazaire": [
+        "city",
+        "paysdelaloire"
+      ],
+      "stherblain": [
+        "city",
+        "paysdelaloire"
+      ],
+      "nantes": [
+        "city",
+        "paysdelaloire"
+      ],
+      "lille": [
+        "city",
+        "hautsdefrance"
+      ],
+      "calais": [
+        "city",
+        "hautsdefrance"
+      ],
+      "latestedebuch": [
+        "city",
+        "nouvelleaquitaine"
+      ],
+      "tourcoing": [
+        "city",
+        "hautsdefrance"
+      ],
+      "roubaix": [
+        "city",
+        "hautsdefrance"
+      ],
+      "labauleescoublac": [
+        "city",
+        "paysdelaloire"
+      ],
+      "pessac": [
+        "city",
+        "nouvelleaquitaine"
+      ],
+      "merignac": [
+        "city",
+        "nouvelleaquitaine"
+      ],
+      "legecapferret": [
+        "city",
+        "nouvelleaquitaine"
+      ],
+      "pornic": [
+        "city",
+        "paysdelaloire"
+      ],
+      "nord": [
+        "dept",
+        "hautsdefrance"
+      ],
+      "loireatlantique": [
+        "dept",
+        "paysdelaloire"
+      ],
+      "gironde": [
+        "dept",
+        "nouvelleaquitaine"
+      ],
+      "pasdecalais": [
+        "dept",
+        "hautsdefrance"
+      ]
+    }
+  },
+  "street_fix": {
+    "France": {
+      "cour2": "cours",
+      "chem1": "chemin",
+      "cou2": "cours",
+      "cour1": "cours",
+      "sent1": "sente",
+      "espl1": "esplanade",
+      "chau1": "chaussee",
+      "peti6": "petite",
+      "ruel1": "ruelle",
+      "peti3": "petite",
+      "cite1": "cite",
+      "parc1": "parc"
+    }
+  }
+}

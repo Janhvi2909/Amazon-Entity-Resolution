@@ -1,0 +1,10 @@
+{
+  "links": 5734515,
+  "gate": 0.45,
+  "country_links": {
+    "India": 2685871,
+    "France": 813701,
+    "US": 2234943
+  },
+  "candidate_pairs": 83311838
+}

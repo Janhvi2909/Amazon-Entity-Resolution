@@ -1,0 +1,51 @@
+{
+  "baseline": {
+    "f05": 0.9882178846447742,
+    "precision": 0.9986923034228161,
+    "recall": 0.9660679647819634,
+    "f05_singletons": 0.9947620594445347,
+    "f05_non_singletons": 0.9878312867960013,
+    "n_entities": 441521
+  },
+  "variants": {
+    "full_name_address": {
+      "added_eval": 197,
+      "added_true": 169,
+      "added_precision": 0.8578680203045685,
+      "metrics": {
+        "f05": 0.9882312146600314,
+        "precision": 0.998677790760368,
+        "recall": 0.9661548052292799,
+        "f05_singletons": 0.9947620594445347,
+        "f05_non_singletons": 0.9878454042833814,
+        "n_entities": 441521
+      }
+    },
+    "core_name_address": {
+      "added_eval": 109,
+      "added_true": 82,
+      "added_precision": 0.7522935779816514,
+      "metrics": {
+        "f05": 0.9882193166186364,
+        "precision": 0.998678271558493,
+        "recall": 0.9661101999350661,
+        "f05_singletons": 0.9947620594445347,
+        "f05_non_singletons": 0.9878328033638775,
+        "n_entities": 441521
+      }
+    },
+    "unique_alias_noaddr": {
+      "added_eval": 2047,
+      "added_true": 627,
+      "added_precision": 0.3063019052271617,
+      "metrics": {
+        "f05": 0.9877307259269592,
+        "precision": 0.9979610828434076,
+        "recall": 0.966411995999444,
+        "f05_singletons": 0.9947620594445347,
+        "f05_non_singletons": 0.987315349123149,
+        "n_entities": 441521
+      }
+    }
+  }
+}

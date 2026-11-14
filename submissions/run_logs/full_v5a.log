@@ -1,0 +1,129 @@
+[      0s  peak   0.1 GB] versions: M-v5a = NORM-v3t + BLK-v4b@20 + FEAT-v4 + MATCH-v2x
+[      0s  peak   0.1 GB] ==== prep  -> /work/full/prep/NORM-v3t
+[    196s  peak  14.4 GB] twin augmentation: {'India': {'train_rate': 0.06547530084194984, 'target_rate': 0.11635139372779282, 'pool': 44343, 'clones': 44933, 'written': 44932}, 'US': {'train_rate': 0.1655685526123933, 'target_rate': 0.30148121114874543, 'pool': 193687, 'clones': 179898, 'written': 179898}}
+[    196s  peak  14.4 GB] train S1 2,206,821 targets 10,545,049 (224,830 synthetic) links 7,638,365 | test S1 1,732,544 targets 9,969,589
+[    196s  peak  14.4 GB] split: fit 661,812, early_stop 110,343, eval 441,521, rest 993,145
+[    219s  peak  14.4 GB] canon: keep_legal ['France'], unseen ['France'], street fixes {'France': {'cour2': 'cours', 'chem1': 'chemin', 'cou2': 'cours', 'cour1': 'cours', 'sent1': 'sente', 'espl1': 'esplanade', 'chau1': 'chaussee', 'peti6': 'petite', 'ruel1': 'ruelle', 'peti3': 'petite', 'cite1': 'cite', 'parc1': 'parc'}}, geo keys {'France': 22}
+[    295s  peak  25.0 GB] aliases: 1105 name, 3107 address
+[    311s  peak  25.0 GB] normalised Q_train
+[    395s  peak  28.1 GB] normalised T_train
+[    408s  peak  28.1 GB] normalised Q_test
+[    491s  peak  28.1 GB] normalised T_test
+[    491s  peak  28.1 GB] ==== prep done in 491s
+[    491s  peak  28.1 GB] ==== block  -> /work/full/block/NORM-v3t__BLK-v4b@20
+[    496s  peak  28.1 GB] region spec: {'countries': ['India', 'US'], 'merges': [('India', 'telangana', 'andhrapradesh'), ('India', 'delhi', 'haryana')], 'min_share': 0.002, 'min_last_ratio': 0.6}
+[    497s  peak  28.1 GB] headroom before block train: disk 676.3 GB free (need ~10), RAM 46.7 GB free of 57.0 (need ~45)
+[    634s  peak  46.8 GB] block train/India: S1 883,188 x targets 4,178,278 -> 42,057,068 candidates (137s)
+[    925s  peak  53.8 GB] block train/US: S1 1,323,633 x targets 6,366,771 -> 62,817,181 candidates (291s)
+[    927s  peak  53.8 GB] block train: 104,874,249 candidates, 47.5 per S1
+[    935s  peak  53.8 GB] blocking recall: all 0.9831, eval 0.9831; synthetic-target candidates 2,093,551
+[    935s  peak  53.8 GB] WARNING TIGHT: headroom before block test: disk 674.5 GB free (need ~10), RAM 36.7 GB free of 57.0 (need ~45)
+[    982s  peak  53.8 GB] block test/France: S1 259,452 x targets 1,434,993 -> 12,885,234 candidates (47s)
+[   1134s  peak  53.8 GB] block test/India: S1 809,986 x targets 4,717,565 -> 38,822,545 candidates (152s)
+[   1247s  peak  53.8 GB] block test/US: S1 663,106 x targets 3,817,031 -> 31,604,059 candidates (113s)
+[   1248s  peak  53.8 GB] block test: 83,311,838 candidates, 48.1 per S1
+[   1248s  peak  53.8 GB] ==== block done in 757s
+[   1248s  peak  53.8 GB] ==== features  -> /work/full/feat/NORM-v3t__BLK-v4b@20__FEAT-v4
+[   1249s  peak  53.8 GB] features train: 27 parts, 0 already good, 27 to compute
+[   1264s  peak  53.8 GB] headroom before features train (4 workers x 6 threads): disk 671.3 GB free (need ~7), RAM 43.9 GB free of 57.0 (need ~30)
+[   1313s  peak  53.8 GB] features train: part-0000.parquet 4,000,000 rows (47s)
+[   1314s  peak  53.8 GB] features train: part-0001.parquet 4,000,000 rows (48s)
+[   1315s  peak  53.8 GB] features train: part-0002.parquet 4,000,000 rows (48s)
+[   1315s  peak  53.8 GB] features train: part-0003.parquet 4,000,000 rows (48s)
+[   1361s  peak  53.8 GB] features train: part-0004.parquet 4,000,000 rows (48s)
+[   1361s  peak  53.8 GB] features train: part-0005.parquet 4,000,000 rows (47s)
+[   1362s  peak  53.8 GB] features train: part-0007.parquet 4,000,000 rows (47s)
+[   1363s  peak  53.8 GB] features train: part-0006.parquet 4,000,000 rows (48s)
+[   1408s  peak  53.8 GB] features train: part-0008.parquet 4,000,000 rows (47s)
+[   1409s  peak  53.8 GB] features train: part-0009.parquet 4,000,000 rows (48s)
+[   1409s  peak  53.8 GB] features train: part-0010.parquet 4,000,000 rows (47s)
+[   1409s  peak  53.8 GB] features train: part-0011.parquet 4,000,000 rows (47s)
+[   1454s  peak  53.8 GB] features train: part-0013.parquet 4,000,000 rows (45s)
+[   1454s  peak  53.8 GB] features train: part-0012.parquet 4,000,000 rows (46s)
+[   1455s  peak  53.8 GB] features train: part-0014.parquet 4,000,000 rows (46s)
+[   1456s  peak  53.8 GB] features train: part-0015.parquet 4,000,000 rows (47s)
+[   1501s  peak  53.8 GB] features train: part-0016.parquet 4,000,000 rows (47s)
+[   1503s  peak  53.8 GB] features train: part-0018.parquet 4,000,000 rows (48s)
+[   1503s  peak  53.8 GB] features train: part-0017.parquet 4,000,000 rows (48s)
+[   1503s  peak  53.8 GB] features train: part-0019.parquet 4,000,000 rows (47s)
+[   1551s  peak  53.8 GB] features train: part-0020.parquet 4,000,000 rows (50s)
+[   1553s  peak  53.8 GB] features train: part-0021.parquet 4,000,000 rows (50s)
+[   1553s  peak  53.8 GB] features train: part-0023.parquet 4,000,000 rows (50s)
+[   1553s  peak  53.8 GB] features train: part-0022.parquet 4,000,000 rows (50s)
+[   1562s  peak  53.8 GB] features train: part-0026.parquet 874,249 rows (9s)
+[   1591s  peak  53.8 GB] features train: part-0024.parquet 4,000,000 rows (40s)
+[   1593s  peak  53.8 GB] features train: part-0025.parquet 4,000,000 rows (40s)
+[   1593s  peak  53.8 GB] features test: 21 parts, 0 already good, 21 to compute
+[   1605s  peak  53.8 GB] headroom before features test (4 workers x 6 threads): disk 665.4 GB free (need ~5), RAM 38.4 GB free of 57.0 (need ~30)
+[   1655s  peak  53.8 GB] features test: part-0000.parquet 4,000,000 rows (47s)
+[   1655s  peak  53.8 GB] features test: part-0002.parquet 4,000,000 rows (48s)
+[   1656s  peak  53.8 GB] features test: part-0003.parquet 4,000,000 rows (49s)
+[   1656s  peak  53.8 GB] features test: part-0001.parquet 4,000,000 rows (49s)
+[   1701s  peak  53.8 GB] features test: part-0004.parquet 4,000,000 rows (47s)
+[   1703s  peak  53.8 GB] features test: part-0005.parquet 4,000,000 rows (48s)
+[   1704s  peak  53.8 GB] features test: part-0007.parquet 4,000,000 rows (47s)
+[   1705s  peak  53.8 GB] features test: part-0006.parquet 4,000,000 rows (48s)
+[   1747s  peak  53.8 GB] features test: part-0008.parquet 4,000,000 rows (46s)
+[   1749s  peak  53.8 GB] features test: part-0009.parquet 4,000,000 rows (46s)
+[   1750s  peak  53.8 GB] features test: part-0010.parquet 4,000,000 rows (46s)
+[   1752s  peak  53.8 GB] features test: part-0011.parquet 4,000,000 rows (47s)
+[   1793s  peak  53.8 GB] features test: part-0012.parquet 4,000,000 rows (46s)
+[   1795s  peak  53.8 GB] features test: part-0013.parquet 4,000,000 rows (46s)
+[   1797s  peak  53.8 GB] features test: part-0014.parquet 4,000,000 rows (46s)
+[   1798s  peak  53.8 GB] features test: part-0015.parquet 4,000,000 rows (46s)
+[   1839s  peak  53.8 GB] features test: part-0016.parquet 4,000,000 rows (46s)
+[   1841s  peak  53.8 GB] features test: part-0017.parquet 4,000,000 rows (46s)
+[   1843s  peak  53.8 GB] features test: part-0018.parquet 4,000,000 rows (46s)
+[   1843s  peak  53.8 GB] features test: part-0019.parquet 4,000,000 rows (46s)
+[   1872s  peak  53.8 GB] features test: part-0020.parquet 3,311,838 rows (33s)
+[   1872s  peak  53.8 GB] ==== features done in 623s
+[   1872s  peak  53.8 GB] ==== train  -> /work/full/runs/NORM-v3t__BLK-v4b@20__FEAT-v4__MATCH-v2x
+[   1874s  peak  53.8 GB] training selection: {'candidates': 104874249, 'rows_by_role': 36693118, 'synthetic_rows_excluded': 732596, 'rows_kept': 35960522}
+[   1874s  peak  53.8 GB] headroom before train: disk 661.9 GB free (need ~2), RAM 28.8 GB free of 57.0 (need ~27)
+[   1884s  peak  53.8 GB] training rows: 35,960,522 (0.0730 positive), 52 features
+[200]	val's binary_logloss: 0.00844647
+[400]	val's binary_logloss: 0.00799414
+[600]	val's binary_logloss: 0.0078784
+[800]	val's binary_logloss: 0.00782774
+[1000]	val's binary_logloss: 0.00779415
+[1200]	val's binary_logloss: 0.00777079
+[1400]	val's binary_logloss: 0.00776382
+[   2300s  peak  53.8 GB] stage1 fold 0: 20,532,454 rows, best iteration 1429 (416s)
+[200]	val's binary_logloss: 0.00847954
+[400]	val's binary_logloss: 0.00802939
+[600]	val's binary_logloss: 0.00790433
+[800]	val's binary_logloss: 0.00784121
+[1000]	val's binary_logloss: 0.00780596
+[1200]	val's binary_logloss: 0.00778595
+[1400]	val's binary_logloss: 0.00778052
+[   2703s  peak  53.8 GB] stage1 fold 1: 20,537,812 rows, best iteration 1361 (403s)
+[200]	val's binary_logloss: 0.00846051
+[400]	val's binary_logloss: 0.00802332
+[600]	val's binary_logloss: 0.00789722
+[800]	val's binary_logloss: 0.00785161
+[1000]	val's binary_logloss: 0.00781658
+[1200]	val's binary_logloss: 0.00779515
+[1400]	val's binary_logloss: 0.00778182
+[   3134s  peak  53.8 GB] stage1 fold 2: 20,572,562 rows, best iteration 1476 (431s)
+[   5834s  peak  53.8 GB] stage 1 predicted train (out-of-fold) and test
+[200]	val's binary_logloss: 0.00681393
+[400]	val's binary_logloss: 0.0067867
+[   6009s  peak  53.8 GB] stage2 fold 0: 20,532,454 rows, best iteration 402 (147s)
+[200]	val's binary_logloss: 0.00680475
+[400]	val's binary_logloss: 0.00677837
+[   6154s  peak  53.8 GB] stage2 fold 1: 20,537,812 rows, best iteration 394 (146s)
+[200]	val's binary_logloss: 0.00682122
+[400]	val's binary_logloss: 0.00679047
+[600]	val's binary_logloss: 0.00678815
+[   6348s  peak  53.8 GB] stage2 fold 2: 20,572,562 rows, best iteration 554 (194s)
+[   6839s  peak  53.8 GB] stage 2 predicted train (out-of-fold) and test
+[   6840s  peak  53.8 GB] ==== train done in 4968s
+[   6840s  peak  53.8 GB] ==== predict  -> /work/full/runs/NORM-v3t__BLK-v4b@20__FEAT-v4__MATCH-v2x
+[   6840s  peak  53.8 GB] eval: 441,521 S1 entities; 419,243 synthetic-twin candidate rows; perfect matcher F0.5=0.9947
+[   6861s  peak  53.8 GB] chosen on new eval: p2 gated_ef=0.5 F0.5=0.9809
+[   6863s  peak  53.8 GB] new_eval: F0.5=0.9809 P=0.9946 R=0.9545 train-w 0.9809 test-w 0.9800 | India 0.9773, US 0.9833 | twin filter -> 0.9799 (removed 5,648, 4,693 of them true)
+[   6865s  peak  53.8 GB] old_eval: F0.5=0.9812 P=0.9950 R=0.9545 train-w 0.9812 test-w 0.9803 | India 0.9776, US 0.9836 | twin filter -> 0.9801 (removed 5,230, 4,693 of them true)
+[   6882s  peak  53.8 GB] test: 5,695,390 links for 1,631,277 of 1,732,544 S1; candidates 25,988,160 (15.0/S1, 0 forced) -> /data/ber/logs/ber-full/out_v5a; profile {'France': {'s1': 259452, 'share_linked': 0.944486841496693, 'links_per_s1': 3.214987743397623}, 'India': {'s1': 809986, 'share_linked': 0.9407631736844835, 'links_per_s1': 3.2864814947418846}, 'US': {'s1': 663106, 'share_linked': 0.9413623161304527, 'links_per_s1': 3.31659040937648}}
+[   6897s  peak  53.8 GB] validator exit 0: ot checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+PASS — no blocking issues found. Safe to submit.
+[   6897s  peak  53.8 GB] ==== predict done in 57s

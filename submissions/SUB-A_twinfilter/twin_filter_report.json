@@ -1,0 +1,27 @@
+{
+  "links_in": 5681985,
+  "links_removed": 22386,
+  "s1_affected": 17956,
+  "by_country": {
+    "France": {
+      "removed": 6305,
+      "flagged_all": 6305
+    },
+    "India": {
+      "removed": 0,
+      "flagged_all": 17917
+    },
+    "US": {
+      "removed": 16081,
+      "flagged_all": 16081
+    }
+  },
+  "rule": {
+    "lo": 2,
+    "hi": 30,
+    "countries": [
+      "US",
+      "France"
+    ]
+  }
+}

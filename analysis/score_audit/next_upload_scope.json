@@ -1,0 +1,50 @@
+{
+  "SUB-FINAL-V3b_es_protocol": {
+    "relative_to": "SUB-FINAL-V3_m2_ce_old_hi",
+    "counts": {
+      "US": {
+        "changed_entities": 876,
+        "added": 411,
+        "removed": 476
+      },
+      "France": {
+        "changed_entities": 2115,
+        "added": 811,
+        "removed": 1341
+      },
+      "India": {
+        "changed_entities": 903,
+        "added": 409,
+        "removed": 500
+      }
+    },
+    "changed_entities": 3894,
+    "total_entities": 1732544,
+    "absolute_full_test_macro_delta_bound": 0.0022475619666802115,
+    "public_subset_bound": "Unknown without public membership"
+  },
+  "SUB-FINAL-V2_m2_ce_old_noreview": {
+    "relative_to": "SUB-FINAL-V3_m2_ce_old_hi",
+    "counts": {
+      "US": {
+        "changed_entities": 2405,
+        "added": 1264,
+        "removed": 1183
+      },
+      "France": {
+        "changed_entities": 12339,
+        "added": 11231,
+        "removed": 1573
+      },
+      "India": {
+        "changed_entities": 3109,
+        "added": 1312,
+        "removed": 1859
+      }
+    },
+    "changed_entities": 17853,
+    "total_entities": 1732544,
+    "absolute_full_test_macro_delta_bound": 0.010304500203169442,
+    "public_subset_bound": "Unknown without public membership"
+  }
+}

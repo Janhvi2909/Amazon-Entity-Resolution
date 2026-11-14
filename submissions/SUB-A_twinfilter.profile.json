@@ -1,0 +1,21 @@
+{
+  "links_base": 5681985,
+  "links_new": 5659599,
+  "added": 0,
+  "removed": 22386,
+  "s1_changed": 17956,
+  "by_country": {
+    "France": {
+      "removed": {
+        "links": 6305,
+        "near_number_1_30": 6305
+      }
+    },
+    "US": {
+      "removed": {
+        "links": 16081,
+        "near_number_1_30": 16081
+      }
+    }
+  }
+}

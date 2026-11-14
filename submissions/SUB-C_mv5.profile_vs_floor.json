@@ -1,0 +1,39 @@
+{
+  "links_base": 5681985,
+  "links_new": 5676445,
+  "added": 78383,
+  "removed": 83923,
+  "s1_changed": 146758,
+  "by_country": {
+    "France": {
+      "added": {
+        "links": 25837,
+        "near_number_1_30": 1276
+      },
+      "removed": {
+        "links": 27345,
+        "near_number_1_30": 4011
+      }
+    },
+    "India": {
+      "added": {
+        "links": 28522,
+        "near_number_1_30": 2039
+      },
+      "removed": {
+        "links": 25421,
+        "near_number_1_30": 4826
+      }
+    },
+    "US": {
+      "added": {
+        "links": 24024,
+        "near_number_1_30": 3337
+      },
+      "removed": {
+        "links": 31157,
+        "near_number_1_30": 6380
+      }
+    }
+  }
+}

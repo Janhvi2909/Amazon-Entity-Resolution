@@ -1,0 +1,61 @@
+[      0s  peak   0.1 GB] versions: M-v5 = NORM-v3t + BLK-v4b@20 + FEAT-v4 + MATCH-v5
+[      0s  peak   0.1 GB] ==== prep: complete and verified in /work/full/prep/NORM-v3t, skipped
+[      0s  peak   0.1 GB] ==== block: complete and verified in /work/full/block/NORM-v3t__BLK-v4b@20, skipped
+[      0s  peak   0.1 GB] ==== features: complete and verified in /work/full/feat/NORM-v3t__BLK-v4b@20__FEAT-v4, skipped
+[      0s  peak   0.1 GB] ==== train  -> /work/full/runs/NORM-v3t__BLK-v4b@20__FEAT-v4__MATCH-v5
+[      4s  peak  12.3 GB] training selection: {'candidates': 104874249, 'rows_by_role': 83892795, 'synthetic_rows_included': 1674308, 'easy_negatives': 71261915, 'easy_dropped': 64135105, 'twin_negatives_weighted': 508615, 'rows_kept': 19757690}
+[      4s  peak  12.3 GB] headroom before train: disk 657.9 GB free (need ~2), RAM 33.7 GB free of 57.0 (need ~17)
+[     12s  peak  12.3 GB] training rows: 19,757,690 (0.3040 positive), 65 features
+[200]	val's binary_logloss: 0.00695028
+[400]	val's binary_logloss: 0.00646154
+[600]	val's binary_logloss: 0.00635524
+[800]	val's binary_logloss: 0.00628352
+[1000]	val's binary_logloss: 0.0062406
+[1200]	val's binary_logloss: 0.00621885
+[1400]	val's binary_logloss: 0.00620232
+[1600]	val's binary_logloss: 0.00619468
+[1800]	val's binary_logloss: 0.0061866
+[    347s  peak  12.3 GB] stage1 fold 0: 9,672,103 rows, best iteration 1785 (335s)
+[200]	val's binary_logloss: 0.00694918
+[400]	val's binary_logloss: 0.00646341
+[600]	val's binary_logloss: 0.00633207
+[800]	val's binary_logloss: 0.00627349
+[1000]	val's binary_logloss: 0.00623083
+[1200]	val's binary_logloss: 0.0062094
+[1400]	val's binary_logloss: 0.00619177
+[1600]	val's binary_logloss: 0.00618898
+[    640s  peak  12.3 GB] stage1 fold 1: 9,675,918 rows, best iteration 1502 (293s)
+[200]	val's binary_logloss: 0.00695358
+[400]	val's binary_logloss: 0.0064706
+[600]	val's binary_logloss: 0.00634347
+[800]	val's binary_logloss: 0.00627419
+[1000]	val's binary_logloss: 0.00623596
+[1200]	val's binary_logloss: 0.0062122
+[1400]	val's binary_logloss: 0.00619631
+[1600]	val's binary_logloss: 0.00617876
+[1800]	val's binary_logloss: 0.00617366
+[    981s  peak  12.3 GB] stage1 fold 2: 9,680,589 rows, best iteration 1813 (342s)
+[   4319s  peak  12.3 GB] stage 1 predicted train (out-of-fold) and test
+[200]	val's binary_logloss: 0.00515944
+[400]	val's binary_logloss: 0.00512672
+[   4491s  peak  33.6 GB] stage2 fold 0: 9,672,103 rows, best iteration 449 (120s)
+[200]	val's binary_logloss: 0.00514849
+[400]	val's binary_logloss: 0.0051229
+[600]	val's binary_logloss: 0.00511603
+[800]	val's binary_logloss: 0.0051166
+[   4664s  peak  33.6 GB] stage2 fold 1: 9,675,918 rows, best iteration 724 (174s)
+[200]	val's binary_logloss: 0.00515951
+[400]	val's binary_logloss: 0.00512715
+[600]	val's binary_logloss: 0.00512075
+[   4825s  peak  33.6 GB] stage2 fold 2: 9,680,589 rows, best iteration 659 (161s)
+[   5663s  peak  33.6 GB] stage 2 predicted train (out-of-fold) and test
+[   5664s  peak  33.6 GB] ==== train done in 5664s
+[   5664s  peak  33.6 GB] ==== predict  -> /work/full/runs/NORM-v3t__BLK-v4b@20__FEAT-v4__MATCH-v5
+[   5665s  peak  33.6 GB] eval: 441,521 S1 entities; 419,243 synthetic-twin candidate rows; perfect matcher F0.5=0.9947
+[   5686s  peak  33.6 GB] chosen on new eval: p2 gated_ef=0.45 F0.5=0.9852
+[   5688s  peak  33.6 GB] new_eval: F0.5=0.9852 P=0.9972 R=0.9609 train-w 0.9852 test-w 0.9844 | India 0.9822, US 0.9872 | twin filter -> 0.9836 (removed 5,230, 5,166 of them true)
+[   5690s  peak  33.6 GB] old_eval: F0.5=0.9852 P=0.9972 R=0.9609 train-w 0.9852 test-w 0.9844 | India 0.9822, US 0.9872 | twin filter -> 0.9836 (removed 5,208, 5,166 of them true)
+[   5707s  peak  33.6 GB] test: 5,676,445 links for 1,629,677 of 1,732,544 S1; candidates 25,988,160 (15.0/S1, 0 forced) -> /data/ber/logs/ber-full/out_v5; profile {'France': {'s1': 259452, 'share_linked': 0.941330188242912, 'links_per_s1': 3.168555262630467}, 'India': {'s1': 809986, 'share_linked': 0.9405026753548826, 'links_per_s1': 3.288812399226653}, 'US': {'s1': 663106, 'share_linked': 0.9405027250545162, 'links_per_s1': 3.303340642370903}}
+[   5721s  peak  33.6 GB] validator exit 0: ot checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+PASS — no blocking issues found. Safe to submit.
+[   5721s  peak  33.6 GB] ==== predict done in 57s

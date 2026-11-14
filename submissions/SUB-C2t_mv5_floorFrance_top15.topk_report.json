@@ -1,0 +1,11 @@
+{
+  "k": 15,
+  "score": "p2",
+  "links": 5677953,
+  "candidates": 26000204,
+  "cand_per_s1": 15.006951627202541,
+  "forced": 12044,
+  "forced_by_country": {
+    "France": 12044
+  }
+}

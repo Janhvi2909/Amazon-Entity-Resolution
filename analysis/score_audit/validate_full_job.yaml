@@ -1,0 +1,33 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ber-codex-validate-full
+  namespace: amlc-ber-jy
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: 1500
+  ttlSecondsAfterFinished: 86400
+  template:
+    spec:
+      nodeSelector: {kubernetes.io/hostname: nst-n7}
+      restartPolicy: Never
+      containers:
+      - name: audit
+        image: python:3.12-slim
+        command: [bash, -c]
+        args:
+        - |
+          set -euo pipefail
+          mkdir -p /data/ber/codex_audit
+          python -u /data/ber/code_0927203238/src/validate_submission.py --matching /data/ber/codex_refine_submission/matching_results.tsv --candidate /data/ber/codex_refine_submission/candidate_pairs.tsv --test-dir /data/dataset/test --check-ids 2>&1 | tee /data/ber/codex_refine_submission/VALIDATOR_IDS.txt
+        resources:
+          requests: {cpu: '2', memory: 16Gi}
+          limits: {cpu: '4', memory: 40Gi}
+        volumeMounts:
+        - {name: data, mountPath: /data}
+        - {name: work, mountPath: /work, readOnly: true}
+      volumes:
+      - name: data
+        persistentVolumeClaim: {claimName: amlc-data}
+      - name: work
+        hostPath: {path: /var/lib/amlc-ber/work, type: Directory}
